@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!---header-->
+    <header class="container mx-auto px-6 py-4 flex justify-between items center">
+        <h1 class="text-3xl font-blod text-black-600">portfolio</h1>
+        <nav class="flex space-x-12">
+            <a href="home" class="text-gray-900 hover:text-black font-extrabold">Acceuil</a>
+            <a href="projets" class="text-gray-900 hover:text-black font-extrabold ">Projet</a>
+            <a href="contact" class="text-gray-900 hover:text-black font-extrabold ">Contact</a>
+
+        </nav>
+    </header>
+
+    <section id="home" class="relative bg-cover bg-centre h-screen " style="background-image: url(photo.jpg);">
+        <div class=" absolute inset-0 flex ">
+            <div class=" text-white m-[250px] ">
+                <h2 class=" text-start text-5xl md:text-5xl mt-4 font-extrablod mb-5 ">Bonjour, je suis Sirine Bannour
+                </h2>
+                <p class=" text-start text-3xl md:text-2xl"> je suis passionne par le developpement web .</p>
+                <div class="flex justify-centre mt-4 items-centre">
+                    <button class="px-5 py-1 bg-white text-black font-semiblod rounded-lg hover:bg-gray transition ">En
+                        savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--skills section -->
+    <section id="--skill" class="py-12 bg-gray">
+        <div class="container mx-auto px-10">
+            <h3 class="text-3xl font-extrablod text-center mb-8">Mes compétences</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="p-6 bg-stone-200 shadow-lg rounded-lg text-center">
+                    <h4 class="text-xl  font-bold mb-4">Base de données</h4>
+                    <p>MySQL</p>
+                </div>
+                <div class="p-6 bg-stone-200 shadaw-lg rounded-lg text-center">
+                    <h4 class="text-xl  font-bold mb-4">Outils de développement</h4>
+                    <p> Bootstrap, VS Code, Android Studio </p>
+
+                </div>
+
+                <div class="p-6 bg-stone-200 shadow-lg rounded-lg text-center">
+                    <h4 class="text-xl  font-bold mb-4">Languages de programmation</h4>
+                    <p> Python, Html, css, javascript</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--projets section-->
+    <section id="projets" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semiblod text-center mb-8">Mes projets</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadaw-lg rounded-lg overflow-hidden">
+                    <img src="image1.jpg" alt="Projet1">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2"> Jeu mobile simple:</h4>
+                        <p> un jeu mobile amusant , comme un jeu de puzzle, de course ou de plateforme.</p>
+
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="image2.jpg" alt="projet2">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2"> Application de révision pour les étudiants:</h4>
+                        <p>une application qui aide les étudiants à réviser efficacement pour leurs examens avec des
+                            flashcards, des résumés et des exercices pratiques. </p>
+
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="image3.jpg" alt="projet3">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Application de suivi d’hydratation:</h4>
+                        <p> une application qui aide les utilisateurs à suivre leur consommation d'eau quotidienne et
+                            leur envoie des rappels pour boire.</p>
+
+                    </div>
+                </div>
+    </section>
+    <!--Contact Form-->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold text-center mb-8">Contactez-moi</h3>
+            <form class="max-w-lg mx-auto bg-white shadow-lg p-6 rounded-lg">
+                <div class="mb-4">
+                    <label class="block text-black font-bold mb-2" for="name">Nom</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg" placeholder="Votre Nom">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-black font-bold mb-2" for="email">E-mail</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg"
+                        placeholder="Votre E-mail">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-black font-bold mb-2" for="message">Message</label>
+                    <textarea id="message" class="w-full px-4 py-2 border rounded-lg" rows="4"
+                        placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-black text-white py-2 rounded-lg font-bold">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-white-800 text-black-200 py-5 ">
+        <div class="container mx-auto px-6 flex justify-centre items-center">
+            <p class="text-md ">&copy; 2024 Sirine's portfolio. Tous droits réservés. </p>
+           
+        </div>
+    </footer>
+
+</body>
+
+</html>
